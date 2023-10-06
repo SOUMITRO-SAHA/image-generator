@@ -6,6 +6,7 @@ I have completed a web application that enables users to upload an image, add mu
 
 [Deployment Link](https://image-generator-frontend-one.vercel.app/): https://image-generator-frontend-one.vercel.app/
 
+API Collection => In API Collection Folder
 
 ### **Requirements:**
 
