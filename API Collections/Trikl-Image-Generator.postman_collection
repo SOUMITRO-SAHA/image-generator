@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "f8526b27-c7a3-4048-b772-4d0a90ff960c",
+		"name": "Trikl Image Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20772347"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Soumitra Saha\",\r\n    \"email\": \"ss@gmail.com\",\r\n    \"password\": \"SS12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{LOCAL}}/auth/register",
+									"host": [
+										"{{LOCAL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"ss@gmail.com\",\r\n    \"password\": \"SS12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{LOCAL}}/auth/login",
+									"host": [
+										"{{LOCAL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{LOCAL}}/auth/logout",
+									"host": [
+										"{{LOCAL}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check Session",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{LOCAL}}/auth/session",
+									"host": [
+										"{{LOCAL}}"
+									],
+									"path": [
+										"auth",
+										"session"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Upload Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/soumi/Downloads/user.png"
+								},
+								{
+									"key": "userId",
+									"value": "651f028694899eaa93af36be",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{LOCAL}}/images",
+							"host": [
+								"{{LOCAL}}"
+							],
+							"path": [
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Images By UserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LOCAL}}/images/user/651f028694899eaa93af36be",
+							"host": [
+								"{{LOCAL}}"
+							],
+							"path": [
+								"images",
+								"user",
+								"651f028694899eaa93af36be"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
