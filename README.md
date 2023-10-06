@@ -4,6 +4,9 @@
 
 I have completed a web application that enables users to upload an image, add multiple logos or images on top of it, overlay text, and offers an option to download the final edited image. The project is built using the MERN stack.
 
+[Deployment Link](https://image-generator-frontend-one.vercel.app/): https://image-generator-frontend-one.vercel.app/
+
+
 ### **Requirements:**
 
 ### Backend (Node.js and Express.js):
@@ -61,11 +64,11 @@ cp .env.sample .env
 4. The application should now be running on `http://localhost:3000`.
 
 ## Screen Shorts
-![HomePage](image.png)
-![Add Text](image-1.png)
-![Alt text](image-2.png)
-![Login Page](image-3.png)
-![Logout Page](image-4.png)
+![HomePage](./Images/image.png)
+![Add Text](./Images/image-1.png)
+![Alt text](./Images/image-2.png)
+![Login Page](./Images/image-3.png)
+![Logout Page](./Images/image-4.png)
 
 # Additional Features
 
